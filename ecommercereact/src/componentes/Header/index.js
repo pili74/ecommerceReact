@@ -1,9 +1,21 @@
 import { BoxIconElement } from 'boxicons'
-import React from 'react'
+import React ,{useContext}from 'react'
 import Nike from "../../images/Nike.jpg";
 import { Link } from 'react-router-dom';
+import { DataContext } from '../../context/Dataprovider';
 
 export const Header = () => {
+  const value = useContext(DataContext);
+  const [menu,setMenu]=value.menu;
+  const show1 = menu ? "carritos show" : "carritos";
+  const show2 = menu ? "carrito show" : "carrito";
+  const [carrito, setCarrito]= value.carrito;
+
+  const toogleMenu=()=>{
+    setMenu(!menu)
+  }
+
+
   return (
    <header>
 
@@ -20,9 +32,9 @@ export const Header = () => {
     <Link to="/productos">Productos</Link>
   </li>
 </ul>
-<div className="cart">
-  <box-icon name="cart"></box-icon>
-  <span className="item__total">0</span>
+<div className="cart"   onClick={toogleMenu}>
+  <box-icon name="cart" ></box-icon>
+  <span className="item__total">{carrito.length}</span>
 </div>
    </header>
   )
