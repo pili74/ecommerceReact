@@ -275,12 +275,14 @@ header .cart span {
 .carrito__close box-icon:hover {
     fill: red;
 }
-.carrito__center{
+
+.carrito__center {
     width: 90%;
     margin: 0 auto;
     /* border: 1px solid red; */
 }
-.carrito__item{
+
+.carrito__item {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr;
     width: 80%;
@@ -288,88 +290,221 @@ header .cart span {
     box-shadow: 0 1px 10px #08a05c;
     border-radius: 5px;
 }
-.carrito__item img{
+
+.carrito__item img {
     width: 9rem;
 }
-.carrito__item h3{
+
+.carrito__item h3 {
     margin-top: 1.5rem;
     font-weight: 600;
     font-size: 1.5rem;
-    font-family:  Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
-.carrito__item .price{
+
+.carrito__item .price {
     color: black;
     font-size: 2rem;
     font-weight: bold;
     text-align: start;
     margin-left: -1rem;
 }
-.carrito__item box-icon{
+
+.carrito__item box-icon {
     fill: #08a05c;
     width: 40px;
     cursor: pointer;
-    margin-top:  .3rem;
+    margin-top: .3rem;
 }
-.carrito__item .cantidad{
+
+.carrito__item .cantidad {
     font-size: 2rem;
     font-weight: bold;
 }
-.carrito__item .remove__item box-icon{
+
+.carrito__item .remove__item box-icon {
     width: 60px;
     height: 80px;
     fill: crimson;
     margin-top: 2rem;
 }
-.carrito__footer{
+
+.carrito__footer {
     text-align: center;
-    margin-bottom:3rem;
+    margin-bottom: 3rem;
 }
-.carrito__footer h3{
+
+.carrito__footer h3 {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1px;
 }
-.carrito__footer .btn{
+
+.carrito__footer .btn {
     display: inline-block;
     padding: .3rem 1rem;
     font-size: 1.2rem;
     background-color: #08a05c;
 
 }
-.carrito__footer .btn:hover{
+
+.carrito__footer .btn:hover {
     background-color: #08a05c;
     color: white;
 
 }
 
+/*--------detalles productos -----------------*/
+.detalles {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 13rem 1rem 1rem 1rem;
+    box-sizing: border-box;
+}
+
+.detalles h2 {
+    font-size: 3rem;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Helvetica, sans-serif;
+}
+
+.detalles .price {
+    font-size: 3rem;
+    width: 100%;
+    color: #08a05c;
+}
+
+.detalles button {
+    max-width: 300px;
+    margin: 1rem 0 3rem 1rem;
+    padding: 1rem 1rem;
+    border: none;
+    outline: 0;
+    background: blue;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.detalles .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 1rem;
+    max-width: 350px;
+      
+}
+
+.detalles .grid  .nuevo  {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+.detalles .grid  .size  {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+.detalles .grid .nuevo {
+    background-color: #08a05c;
+    
+}
+
+.detalles .grid .size {
+    background-color: #f1365b;
+    display: flex;
+}
+
+.detalles .grid .size select {
+    border: none;
+    outline: 0;
+    font-size: 2rem;
+    background-color: #f1365b;
+    color: white;
+    cursor: pointer;
+}
+
+.detalles img {
+    min-height: 300px;
+    object-fit: contain;
+    margin-top: -7rem;
+    z-index: -1;
+}
+
+.detalles input {
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.detalles .description {
+    font-size: 1.1rem;
+    max-width: 1300px;
+    width: 100%;
+    letter-spacing: 1px;
+    color: #5f5d5d;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+.detalles .description b {
+    font-size: 1.4rem;
+    color: #30333a;
+}
+
+.relacionado{
+    text-align: center;
+    background: #5f5d5d ;
+    color: white;
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+}
 /*----------MEDIA -----------------*/
 @media only screen and (max-width: 1000px) {
     .carrito__item {
-       width: 92%;
+        width: 92%;
     }
 }
 
 @media only screen and (max-width: 700px) {
     .carrito {
-       width: 100%;
-       height: 100%;
-       padding: 1rem;
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
     }
 }
-.carrito__item h3{
+
+.carrito__item h3 {
     font-size: 1.2rem;
 }
+
 @media only screen and (max-width: 600px) {
     header ul {
         display: none;
     }
 }
+
 @media only screen and (max-width: 450px) {
-   .carrito__item h3{
-      display: .5rem;
+    .carrito__item h3 {
+        display: .5rem;
     }
 }
-.carrito__item .remove__item box-icon{
+
+.carrito__item .remove__item box-icon {
     width: 30px;
     height: 70px;
 }
