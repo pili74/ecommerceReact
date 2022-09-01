@@ -358,13 +358,14 @@ header .cart span {
 .detalles {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding: 13rem 1rem 1rem 1rem;
+    width: 30%;
+    padding: 8rem 1rem 1rem 1rem;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .detalles h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
@@ -372,7 +373,7 @@ header .cart span {
 }
 
 .detalles .price {
-    font-size: 3rem;
+    font-size: 2rem;
     width: 100%;
     color: #08a05c;
 }
@@ -395,22 +396,22 @@ header .cart span {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem 1rem;
-    max-width: 350px;
+    max-width: 250px;
       
 }
 
 .detalles .grid  .nuevo  {
     padding: 1rem 2rem;
     border-radius: 8px;
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 400;
     color: white;
 }
 .detalles .grid  .size  {
     padding: 1rem 2rem;
     border-radius: 8px;
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 400;
     color: white;
 }
 .detalles .grid .nuevo {
@@ -465,7 +466,7 @@ header .cart span {
     text-align: center;
     background: #5f5d5d ;
     color: white;
-    max-width: 350px;
+    max-width: 100%;
     width: 100%;
     margin: 0 auto;
     font-size: 18px;

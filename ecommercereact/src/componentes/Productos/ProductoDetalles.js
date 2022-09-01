@@ -68,8 +68,9 @@ export const ProductoDetalles = () => {
 
                     <input type="range" min="1" max="36" value={url} onChange={handleInput} />
                     <div className="description">
-                        <p><b>Description:</b> Lorem fddfs sdfsdfsdf sdfsdfsdfsdfsdfsfdsdf
-                            sdfsdfsdfsdfsd sdfsdfdfd dffdsdfsf </p>
+                        <p><b>Descripción:</b> Las Zapatillas Nike Downshifter 11 tienen un soporte más flexible para acompañarte en todos tus movimientos. 
+                        Cuenta con un gran soporte en la zona media del pie para mayor estabilidad, 
+                        una suela suave que aporta confort y tracción y un diseño liviano para mantener el estilo en todas tus carreras. </p>
 
                     </div>
                 </div>
