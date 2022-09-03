@@ -7,6 +7,7 @@ import { } from "./componentes/Paginas";
 import {Paginas} from "./componentes/Paginas";
 import {DataProvider} from "./context/Dataprovider";
 import {Carrito} from "./componentes/Carrito";
+import Footer from "./componentes/Footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Header />
         <Carrito/>
         <Paginas/>
+        <Footer/>
       </BrowserRouter>
 
     </div>

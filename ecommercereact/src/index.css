@@ -27,7 +27,7 @@ code {
 
 /*-----------------HEADER--------------*/
 header {
-    width: 97%;
+    width: 100vw;
     min-height: 100px;
     max-width: 1530;
     overflow: hidden;
@@ -39,6 +39,7 @@ header {
     box-sizing: border-box;
     background-color: white;
     box-shadow: 0 5px 10px #08a050;
+    margin-left: -14px;
 }
 
 a {
@@ -474,6 +475,35 @@ header .cart span {
     text-transform: uppercase;
 
 }
+
+/*---------Agregado para el footer------*/
+
+#bg{
+    background-color: #08a05c;
+ }
+     
+ #in{
+    color: rgba(234, 13, 234, 0.657);
+    font-size: 40px;
+ }
+     
+ #fb{
+    color: #150D9F;
+    font-size: 40px;
+ }
+     
+ #tw{
+    color: deepskyblue;
+    font-size: 40px;
+ }
+     
+ #wa{
+    color: green;
+    font-size: 40px;
+ }
+ 
+ /*---------Agregado para el footer------*/
+ 
 /*----------MEDIA -----------------*/
 @media only screen and (max-width: 1000px) {
     .carrito__item {
